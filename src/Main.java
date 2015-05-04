@@ -6,8 +6,10 @@ public class Main {
 
 	
 	
+	private static Scanner reader;
+
 	public static void main(String[] args) {
-		Scanner reader = new Scanner(System.in);
+		reader = new Scanner(System.in);
 		int iloscPanstw;
 		ArrayList<String> sasiadujacePanstwa = new ArrayList<String>();
 		ArrayList<String> cnf = new ArrayList<String>();
@@ -47,14 +49,12 @@ public class Main {
 
 		}
 		
-		ArrayList<String> wynik = new ArrayList<String>();
 		System.out.println("Podaj wynik z SAT Solvera: ");
 		wynikSat =  "-1 -34 -33 -32 31 -11 -21 -30 -29 -28 -27 -26 -25 -24 -23 22 -12 -20 -19 -18 -17 -16 -15 -14 13 -10 -9 -8 -7 -6 -5 -4 -3 -2 0";
 		
 		String[] wynikSplit = wynikSat.split(" ");
 		int [] wynikowaTablica = new int[wynikSplit.length];
 
-		int [] ostatecznyWynik = new int[5];
 		for(int i=0; i!= wynikSplit.length; i++){
 			wynikowaTablica[i] = Integer.parseInt(wynikSplit[i]);
 			//System.out.println(wynikSplit[i]);	

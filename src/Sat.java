@@ -6,7 +6,7 @@ int ilosc_panstw;
 
 		/* Pierwsyz warunek: kazde panstwo posiada jakis kolor*/
 	static ArrayList<String> firstCondition(int ilosc_krajow){
-		ArrayList firstCond = new ArrayList<String>();
+		ArrayList<String> firstCond = new ArrayList<String>();
 		
 		for(int i=1; i<=ilosc_krajow; i++ ){
 			firstCond.add(i+"1 " + i+"2 " + i+"3 " + i+"4 0");
@@ -16,7 +16,7 @@ int ilosc_panstw;
 	
 		/*	Drugi warunek: kazde panstwo posiada jeden kolor */
 	static ArrayList<String> secondCondition(int ilosc_krajow){
-		ArrayList secondCond = new ArrayList<String>();
+		ArrayList<String> secondCond = new ArrayList<String>();
 		
 		for(int i=1; i<=ilosc_krajow; i++){
 			secondCond.add("-"+i+"1 " + "-"+i+"2 0");
@@ -32,7 +32,7 @@ int ilosc_panstw;
 	
 		/* Trzeci warunek: panstwo ma inny kolor niz sasiad */
 	static ArrayList<String> thirdCondition(int ilosc_krajow, ArrayList<String> sasiadujacePanstwa){
-		ArrayList thirdCondition = new ArrayList<String>();
+		ArrayList<String> thirdCondition = new ArrayList<String>();
 		
 		for(String sasiedzi : sasiadujacePanstwa){
 			String panstwo1 = sasiedzi.split("#") [0] ;
