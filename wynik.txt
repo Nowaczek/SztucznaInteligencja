@@ -1,9 +1,9 @@
 c Rsat version 2.01
-v -1 -24 -23 -22 21 -13 -17 -20 -19 18 -2 -6 -10 -14 -16 15 -11 -12 9 -5 -8 7 -3 4 0
+v -1 -28 -27 -26 25 -21 -24 -23 22 -10 -20 -19 -18 17 -13 -16 -15 14 -12 -11 9 -5 -8 -7 6 -2 -4 3 0
 c 
 c 
 s SATISFIABLE
-c CNF stats: (24 vars, 218 clauses)
-c Decisions: 9
+c CNF stats: (28 vars, 145 clauses)
+c Decisions: 16
 c Conflicts: 0
 c Running time: 0.00000 seconds
